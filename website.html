@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Corner with Kishan | Home</title>
+    <link rel="stylesheet" href="Styling/website.css">
+</head>
+<body>
+    <header>
+        <h1>Code Corner with Kishan</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Python</a>
+        <a href="#">Java</a>
+        <a href="#">HTML, CSS & JS</a>
+        <a href="#">CSS</a>
+        <a href="#">Nature</a>
+        <a href="#">Login/SignUp</a>
+        <a href="#" id="theme-toggle">Dark Mode</a>
+    </nav>
+    
+    <main>
+        <section>
+            <h2>Overview of Programming languages</h2>
+            <div class="media-container">
+                <video src="image/vid1.mp4" controls></video>
+                <video src="image/vid2.mp4" controls></video>
+                <video src="image/vid3.mp4" controls></video>
+                <br> <br> <br>
+                <video src="image/vid3.mp4" controls></video>
+                <video src="image/vid1.mp4" controls></video>
+                <video src="image/vid2.mp4" controls></video>
+            </div>
+        </section>
+
+        <section>
+            <h2>Python</h2>
+            <div class="media-container">
+                <iframe src="https://www.youtube.com/embed/YixA5kdJuhI?si=mDNNMoYuhCaxQRRC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/RNCU5vDfpkQ?si=NOrrFYZ9wstqhGP5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/5Qh2yHSYVJo?si=sj55ENBRf_a185-R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section>
+            <h2>Source Code</h2>
+            <div class="media-container">
+                <a href="To Do.pdf" target="_blank"> <img src="image/Design.jpeg" alt="To-Do App using Python."></a>
+                <a href="URL shortner.pdf" target="_blank"> <img src="image/Designo.jpeg" alt="URL Shortner using Python."></a>
+                <a href="QR-Code Generator.pdf" target="_blank"> <img src="image/Designo1.jpeg" alt="QR-Code Generator using Python."></a>
+                <a href="Jumbled Word.pdf" target="_blank"> <img src="image/Designo1h.jpeg" alt="Jumbled Word game using Python."></a>
+                <br> <br> <br>
+                <a href="#" target="_blank"> <img src="#" alt="Rock Paper Scissor Game in Java"></a>
+                <a href="#" target="_blank"> <img src="#" alt="Calendar using Python"></a>
+                <a href="#" target="_blank"> <img src="#" alt="Random Password Generator using Python"></a>
+                <a href="Jumbled Word.pdf" target="_blank"> <img src="image/Designo1h.jpeg" alt="Jumbled Word game using Python."></a>
+            </div>
+        </section>
+
+        <section>
+            <h2>Creator</h2>
+            <img src="image/IMG-20231216-WA0018.jpg" alt="This is Kishan Lad" class="creator-image">
+            <h3>Kishan Lad</h3>
+            <a href="https://www.youtube.com/@codecornerwithkishan.4922" target="_blank">YouTube</a> &nbsp; | &nbsp; 
+            <a href="https://www.instagram.com/1_kishan_9/" target="_blank">Instagram</a> &nbsp; | &nbsp;
+            <a href="https://www.linkedin.com/in/kishan-lad-b55872324/" target="_blank">Linkedin</a>
+            <h4>Student of Vellore Institute of Technology, Amaravati, AP | Ex-Student of Atomic Energy Central School, Kakrapar.</h4>
+            <h5>Hello everyone, I am a student persuing my Higher Studies from VIT-AP, endulged in Computer Science and Engineering Branch. I run a YouTube channel name 'Code Corner with Kishan', and I have a great interest in coding & programming. I believe in transferring my technical skills with others and helping others with their work. Coding is FUN.</h5>
+        </section>
+
+    </main>
+
+    <footer>
+        <a href="#">FAQ</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">&copy; 2024 Code Corner with Kishan</a>
+    </footer>
+
+    <script>
+        const toggleButton = document.getElementById('theme-toggle');
+        const body = document.body;
+
+        // Check for saved theme preference
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+            body.classList.add('dark-mode');
+            toggleButton.innerText = 'Light Mode';
+        }
+
+        toggleButton.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            
+            // Update button text and save preference
+            if (body.classList.contains('dark-mode')) {
+                localStorage.setItem('theme', 'dark');
+                toggleButton.innerText = 'Light Mode';
+            } else {
+                localStorage.setItem('theme', 'light');
+                toggleButton.innerText = 'Dark Mode';
+            }
+        });
+    </script>
+</body>
+</html>
